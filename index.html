@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Banking Form Exercise</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+<form method="get" action="test.php">
+    <h2>High-Risk Loan Application</h2>
+    <p>Fill out this awesome form to see if there's any chance of this loan happening.</p>
+        <fieldset>
+        <legend>Basic Information</legend>
+        <p>First Name:</p><input type="text" name="first-name" size="30">
+        <p>Middle Initial</p><input type="text" name="middle-initial" size="2">
+        <p>Last Name:</p><input type="text" name="last-name" size="40">
+        <p>Address:</p><textarea name="Address" rows="6" cols="30">Type your full address here.</textarea>
+        <p>Applicant Occupation:</p><input type="text" name="first-name" size="30">
+        <p>Applicant Employer:</p><input type="text" name="first-name" size="30">
+        <p>Employer Address::</p><input type="text" name="first-name" size="30">
+        </fieldset>
+        <fieldset>
+            <legend>Loan Information</legend>
+            <fieldset>
+                <legend>Loan Type:</legend>
+                <select>
+                    <option value="commercial">Commercial</option>
+                    <option value="real-estate">Real Estate</option>
+                    <option value="personal">Personal</option>
+                    <option value="mortgage">Mortgage</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Loan Length:</legend>
+                    <input type=radio name="loan-length" value="5-years">5 Years<br>
+                    <input type=radio name="loan-length" value="15-years">15 Years<br>
+                    <input type=radio name="loan-length" value="30-years">30 Years<br>
+            </fieldset>
+            <fieldset>
+                <legend>Special Conditions:</legend>
+                    <input type="checkbox" name="special-conditions" value="down-payment">I have a downpayment<br>
+                    <input type="checkbox" name="special-conditions" value="out-of-state">Out-of-state resident<br>
+                    <input type="checkbox" name="special-conditions" value="married">Married.<br>
+                    <input type="checkbox" name="special-conditions" value="cosigned">Loan will be cosigned<br>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Comments:</legend>
+                    <textarea name="additional-comments" rows="20" cols="60">Make your sorry case here</textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                    <p>Email:</p><input type="email" name="email-address" value="user@domain.com">
+                    <p>Telehone Number:</p><input type="tel" name="telephone" value="(xxx)xxx-xxxx">
+                    <p>LinkedIn URL:</p><input type="URL" name="url" value="http://linkedin.com/in/username" size="40">
+            </fieldset>
+            <input type="submit" value="Submit!">
+        </fieldset>
+
+
+</form>
+</body>
+</html>
+
+
+<!-- Instructions:
+
+Build a form that accepts a loan application. It must have the following fields.
+
+Applicant first name
+Applicant middle initial
+Applicant last name
+Applicant address
+Applicant occupation
+Applicant employer
+Employer address
+Type of loan select element with these options:
+Commercial
+Real estate
+Personal
+Mortgage
+Requested amount of loan
+Radio button elements for loan length
+5 years
+15 years
+30 years
+Checkbox group for special conditions
+I have a down payment
+Out-of-state resident
+Married
+Loan will be co-signed
+A text area to allow for additional comments
+Applicant email address
+Applicant telephone number
+Applicant LinkedIn URL -->
